@@ -7,6 +7,53 @@
 </head>
 
 <body>
+	<form method="post">
+  <div>
+    <label for="name">Name*</label>
+    <input type="text" id="name" name="name" required placeholder="Name">
+  </div>
+  <div>
+    <label for="email">Email*</label>
+    <input type="email" id="email" name="email" required placeholder="Email">
+  </div>
+  <div>
+    <label for="gender">Gender*</label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label>
+  </div>
+  <div>
+    <label for="laptop">Laptop Brands*</label>
+    <select id="laptop" name="laptop" required>
+      <option value="" disabled selected>--Please choose an option--</option>
+      <option value="Apple">Apple</option>
+      <option value="Asus">Asus</option>
+      <option value="HP">HP</option>
+    </select>
+  </div>
+  <div>
+    <label for="age">Age*</label>
+    <input type="number" id="age" name="age" required placeholder="Age">
+  </div>
+  <div>
+    <label for="dob">DOB*</label>
+    <input type="date" id="dob" name="dob" required>
+  </div>
+  <div>
+    <label for="password">Password*</label>
+    <input type="password" id="password" name="password" required placeholder="Password">
+  </div>
+  <div>
+    <label for="portfolio">Portfolio URL</label>
+    <input type="url" id="portfolio" name="portfolio" placeholder="Paste URL here">
+  </div>
+  <div>
+    <input type="submit" value="Submit">
+  </div>
+</form>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
